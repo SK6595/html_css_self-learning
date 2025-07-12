@@ -1,3 +1,5 @@
+@import url('normalize.css'); /*normalize.cssに関してはHTMLから読むのではなく、CSSから参照してあげれば直接読み込めるようになる。*/
+/*「@import」という書き方は、CSSのファイルの中から別のCSSファイルを参照するというやり方ができる。*/
 h1 {
     text-align: center;
     font-size: 1.5em;
