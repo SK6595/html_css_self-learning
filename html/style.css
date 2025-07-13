@@ -1,9 +1,18 @@
+/* CSSをリセットする */
 @import url('normalize.css'); /*normalize.cssに関してはHTMLから読むのではなく、CSSから参照してあげれば直接読み込めるようになる。*/
 /*「@import」という書き方は、CSSのファイルの中から別のCSSファイルを参照するというやり方ができる。*/
+
 h1 {
     text-align: center;
     font-size: 1.5em;
 }
 p {
     color: dimgray;
+}
+header {
+    background-color: white; /* whiteなどは「カラーネーム」と呼ばれる。 */
+}
+body {
+    margin: 0;
+    padding: 0;
 }
