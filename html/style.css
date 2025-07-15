@@ -14,7 +14,15 @@ header {
     padding: 20px 30px; /*paddingは「内側の余白」を意味する。*/ /*marginは「外側の余白」を意味する。*/
 }
 body {
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #fff;
+  padding: 100px 300px;
+}
+
+header, main, footer {
+  padding: 20px 30px;
 }
