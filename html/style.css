@@ -16,7 +16,7 @@ body {
 }
 header {
     background-color: white; /* whiteなどは「カラーネーム」と呼ばれる。whiteは、カラーコードの「#fff」に書き換えることができる。*/
-    padding: 100px 300px; /*paddingは「内側の余白」を意味する。*/ /*marginは「外側の余白」を意味する。*/
+    /*padding: 100px 300px;*/ /*paddingは「内側の余白」を意味する。*/ /*marginは「外側の余白」を意味する。*/
 }
 header,
 main,
