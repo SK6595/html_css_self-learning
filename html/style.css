@@ -23,3 +23,9 @@ main,
 footer {
   padding: 20px 30px;
 }
+div {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 10px; /*個別のプロパティで10px空けている。*/
+  border-radius: 10px; /*border-radiusは枠線の丸みを設定するためのものになる。*/
+}
