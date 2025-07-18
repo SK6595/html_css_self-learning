@@ -23,9 +23,15 @@ main,
 footer {
   padding: 20px 30px;
 }
-div {
+.card { /*class属性を使ってクラスを分けるというセレクターのことを「クラスセレクター」と言う。タグ名は省略することでHTMLが後から変更しやすくなる。*/
   background-color: #fff;
   padding: 10px 20px;
   margin-bottom: 10px; /*個別のプロパティで10px空けている。*/
   border-radius: 10px; /*border-radiusは枠線の丸みを設定するためのものになる。*/
+}
+.center {
+  text-align: center;
+}
+.text-small {
+  font-size: .8em; /*1emが標準の大きさなので、「.8」は80%のことになる。0は省略できる。*/
 }
