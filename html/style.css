@@ -3,11 +3,14 @@
 /*「@import」という書き方は、CSSのファイルの中から別のCSSファイルを参照するというやり方ができる。*/
 
 h1 {
-    text-align: center;
-    font-size: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
+}
+h2 {
+  margin-top: 50px;
 }
 p {
-    color: dimgray;
+  color: dimgray;
 }
 body {
   background-color: #eee;
@@ -15,7 +18,7 @@ body {
   padding: 0;
 }
 header {
-    background-color: white; /* whiteなどは「カラーネーム」と呼ばれる。whiteは、カラーコードの「#fff」に書き換えることができる。*/
+  background-color: white; /* whiteなどは「カラーネーム」と呼ばれる。whiteは、カラーコードの「#fff」に書き換えることができる。*/
     /*padding: 100px 300px;*/ /*paddingは「内側の余白」を意味する。*/ /*marginは「外側の余白」を意味する。*/
 }
 header,
