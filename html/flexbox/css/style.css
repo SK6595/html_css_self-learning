@@ -4,6 +4,15 @@
   display: flex;
   gap: 10px; /*gapは、flexboxにすることで使用できるプロパティになる。*/
 }
-li {
-  border: 1px solid #ccc;
+
+nav { /*navがたくさんある場合は、classで分けると良いが、通常1つの画面にnavは1つなので、要素セレクタにする */
+ display: flex; /*displayプロパティが元々blockになっているので横並びに指定する*/
+ align-items: center;
+ justify-content: space-between; /*「betweenのところにスペースを入れるよ」ということなので、要素同士の間のところに空白が入って、両橋に寄せるような形になる*/
+ padding: 10px;
+}
+
+nav h1 {
+  font-size: 1.5em;
+  font-weight: bold;
 }
