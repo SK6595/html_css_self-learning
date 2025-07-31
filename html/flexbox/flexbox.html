@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+
+    <style>
+      .container {
+        display: flex;
+        gap: 10px;
+        /*flex-direction: row;*/ /*flexの方向性を制御するプロパティで、標準ではrowで定義されている。*/
+        /*flex-wrap: wrap;*/ /*wrapは折り返しの意味。標準では、「nowrap」になっている。*/
+        flex-flow: row wrap; /*ショートハンドプロパティで、最初に「flex-direction」を設定して、次に「flex-wrap」を設定していく。*/
+      }
+      .box {
+        background-color: #36bbe7;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"> <!-- Flexboxをするためには、まず先に「Flexコンテナ」と言うが、そのアイテム群をくるむ要素が必要になる。 -->
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+      <div class="box box4">box4</div>
+      <div class="box box5">box5</div>
+      <div class="box box6">box6</div>
+      <div class="box box7">box7</div>
+      <div class="box box8">box8</div>
+      <div class="box box9">box9</div>
+      <div class="box box10">box10</div>
+    </div>
+  </body>
+</html>
