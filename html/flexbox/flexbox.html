@@ -10,7 +10,7 @@
         gap: 10px;
         /*flex-direction: row;*/ /*flexの方向性を制御するプロパティで、標準ではrowで定義されている。*/
         /*flex-wrap: wrap;*/ /*wrapは折り返しの意味。標準では、「nowrap」になっている。*/
-        flex-flow: row wrap; /*ショートハンドプロパティで、最初に「flex-direction」を設定して、次に「flex-wrap」を設定していく。*/
+        flex-flow: row nowrap; /*ショートハンドプロパティで、最初に「flex-direction」を設定して、次に「flex-wrap」を設定していく。*/
         justify-content: space-around;
         align-items: center; /*「justify-content」が、「横位置」の位置指定だったが、align-itemsは「縦位置」の位置指定になる。align-itemsは標準だと、「strech」という値になる。*/
         height: 100vh; /*「ウィンドウの高さ」と同じ高さになる。*/
@@ -19,9 +19,18 @@
       .box {
         background-color: #36bbe7;
         padding: 20px;
+        flex-grow: 1; /*値は標準だと0になるが、1に変更すると幅が育つようになるので伸びる。*/
       }
       .box1 {
         height: 300px;
+        order: 2; /*orderプロパティは、「並び順」を意味する。orderプロパティは指定するのであれば全部に指定しないとうまく機能しない。*/
+        flex-basis: 200px; /*Flexボックスを使っている時はwidthではなく、「flex-basis」を使う。*/
+      }
+      .box2 {
+        order: 3;
+      }
+      .box3 {
+        order: 1;
       }
     </style>
   </head>
@@ -30,13 +39,6 @@
       <div class="box box1">box1</div>
       <div class="box box2">box2</div>
       <div class="box box3">box3</div>
-      <div class="box box4">box4</div>
-      <div class="box box5">box5</div>
-      <div class="box box6">box6</div>
-      <div class="box box7">box7</div>
-      <div class="box box8">box8</div>
-      <div class="box box9">box9</div>
-      <div class="box box10">box10</div>
     </div>
   </body>
 </html>
