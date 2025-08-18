@@ -10,19 +10,21 @@
         <header>
             <h1>MyTube</h1>
         </header>
-
-        <aside>
-            <nav>
-                <ul>
-                    <li><a href="#">ホーム</a></li>
-                    <li><a href="#">急上昇</a></li>
-                    <li><a href="#">登録チャンネル</a></li>
-                    <li><a href="#">お気に入り</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main>
-            <p>main</p>
-        </main>
+        
+        <div class="container"> <!-- containerというクラスは全体を囲う時によく使われるクラス名になる。 -->
+            <aside> <!-- サイドエリアの箇所にナビゲーション以外のお知らせ的なものを入れたくなるかもしれないので、今回はasideタグを使う -->
+                <nav>
+                    <ul>
+                        <li><a href="#">ホーム</a></li>
+                        <li><a href="#">急上昇</a></li>
+                        <li><a href="#">登録チャンネル</a></li>
+                        <li><a href="#">お気に入り</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+                <p>main</p>
+            </main>
+        </div>
     </body>
 </html>

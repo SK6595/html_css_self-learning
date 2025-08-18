@@ -1,1 +1,35 @@
-@import url('https://unpkg.com/ress/dist/ress.min.css');
+@import url('https://unpkg.com/ress/dist/ress.min.css'); /*URLのリンクはCDNでコピーしたリンクをそのまま貼り付けている。*/
+
+body {
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 240px 1fr; /*240pxと1frの幅を持たせた2カラムを作ってくださいという意味になる。*/
+}
+
+main {
+  background-color: #f0f0f0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /*margin-bottomだけでも良いが、margin-bottomだと一番下に余計なマージンが生まれてしまったりするので、フレックスボックスを使ってgapを使うという方法もあり。*/
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+}
