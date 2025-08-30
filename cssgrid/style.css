@@ -24,6 +24,24 @@ main {
   gap: 20px;
 }
 
+@media (max-width: 1200px) { /*メディアクエリー（ウィンドウの幅に応じてCSSを変える）はどこに書いても良い。「(max-width: 1200px)」の箇所が条件になる。*/
+  main {
+    grid-template-columns: repeat(3, 1fr); /*「1fr」は、「全幅」という意味になる。*/
+  }
+}
+
+@media (max-width: 768px) { /*「768px」という幅は、非常に大きなスマホの場合でも768pxを超えることはあまりないので、これをスマートフォンの幅とするということになる。*/
+  main {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    grid-template-columns: 1fr;　/*displayプロパティをブロックなどに変えてしまい、CSSグリッド自体を無効にする方法でも良い。*/
+  }
+  aside {
+    display: none;
+  }
+}
+
 nav ul {
   list-style: none;
   display: flex;
