@@ -8,7 +8,8 @@
     <style>
       .container {
         display: grid;
-        grid-template-columns: repeat(3, 300px); /*repeatの丸括弧の中には、「何列必要ですか」というのと、「どれくらいの値ですか」というのをそれぞれ設定していく。*/
+        /*grid-template-columns: repeat(3, 300px); */ /*repeatの丸括弧の中には、「何列必要ですか」というのと、「どれくらいの値ですか」というのをそれぞれ設定していく。*/
+        grid-template-columns: 200px 2fr 1fr; /*「fr」はFractionの略称で、「分数」という意味になる。*/
         grid-template-rows: 100px 300px;
         grid-auto-rows: 200px;
       }
