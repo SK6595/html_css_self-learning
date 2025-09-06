@@ -9,9 +9,15 @@
       .container {
         display: grid;
         /*grid-template-columns: repeat(3, 300px); */ /*repeatの丸括弧の中には、「何列必要ですか」というのと、「どれくらいの値ですか」というのをそれぞれ設定していく。*/
-        grid-template-columns: 200px 2fr 1fr; /*「fr」はFractionの略称で、「分数」という意味になる。*/
+        /*grid-template-columns: 200px 2fr 1fr; */ /*「fr」はFractionの略称で、「分数」という意味になる。*/
+        height: 100vh; /*「vh」は「viewport height」の略称で、「今見えている画面の高さ」になる。*/
+        grid-template-columns: 200px 200px;
         grid-template-rows: minmax(100px, auto) 200px; /*100pxが「min」になり、autoが「max」になる。
         「1行目は少なくとも100px確保してください」ということになり、100px以上の高さになったらautoになるので、「その要素の高さにしてください」ということになる。*/
+        justify-content: center;
+        align-content: center; /*縦位置がセンターに揃う。*/
+        justify-items: center; /*各エリアの中での位置を設定できる。*/
+        align-items: center; /*1つ1つのカラムに対して上下中央になる*/
       }
       .box {
         background-color: #eee;
