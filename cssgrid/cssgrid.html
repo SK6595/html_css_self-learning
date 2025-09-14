@@ -6,43 +6,67 @@
     <title>CSS Grid</title>
 
     <style>
-      .container {
-        display: grid;
+      /*.container {
+        display: grid;*/
         /*grid-template-columns: repeat(3, 300px); */ /*repeatの丸括弧の中には、「何列必要ですか」というのと、「どれくらいの値ですか」というのをそれぞれ設定していく。*/
         /*grid-template-columns: 200px 2fr 1fr; */ /*「fr」はFractionの略称で、「分数」という意味になる。*/
-        height: 100vh; /*「vh」は「viewport height」の略称で、「今見えている画面の高さ」になる。*/
-        grid-template-columns: 200px 200px 200px;
-        grid-template-rows: minmax(100px, auto) 200px; /*100pxが「min」になり、autoが「max」になる。
+        /*height: 100vh;*/ /*「vh」は「viewport height」の略称で、「今見えている画面の高さ」になる。*/
+        /*grid-template-columns: 200px 200px 200px;*/
+        /*grid-template-rows: minmax(100px, auto) 200px;*/ /*100pxが「min」になり、autoが「max」になる。
         「1行目は少なくとも100px確保してください」ということになり、100px以上の高さになったらautoになるので、「その要素の高さにしてください」ということになる。*/
         /*justify-content: center;*/
        /*align-content: center; */ /*縦位置がセンターに揃う。*/
         /*justify-items: center; */ /*各エリアの中での位置を設定できる。*/
         /*align-items: center; */ /*1つ1つのカラムに対して上下中央になる*/
-      }
+      /*}*/
+      /*
+      .box1 {
+        grid-column: 2 / 4;*/ /* 「線」を2から4まで使うという意味になる。 */
+       /*grid-row: 1 / 3;
+        z-index: 2;*/ /* 「z-index」が大きな値のものほど上に重なる。 */
+      /*}*/
+      /*
+      .box2 {
+        grid-column: 2 / span 1;*/ /* 「2番目の数字から始めて1本分結合してください」という意味になる。 */
+        /*grid-row: 2 / 4;
+        z-index: 1;*/
+      /*}*/
       .box {
         background-color: #eee;
         border: 1px solid #333;
         padding: 10px;
       }
+      
       .box1 {
-        grid-column: 2 / 4; /* 「線」を2から4まで使うという意味になる。 */
-        grid-row: 1 / 3;
-        z-index: 2; /* 「z-index」が大きな値のものほど上に重なる。 */
+        grid-area: header;
       }
       .box2 {
-        grid-column: 2 / span 1; /* 「2番目の数字から始めて1本分結合してください」という意味になる。 */
-        grid-row: 2 / 4;
-        z-index: 1;
+        grid-area: sidebar;
+      }
+      .box3 {
+        grid-area: main;
+      }
+      .box4 {
+        grid-area: footer;
+      }
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "sidebar main"
+          "footer footer";
+        grid-template-columns: 200px 1fr; /*ヘッダーとフッターの場合は、200pxと1frの両方を占める。*/
+        grid-template-rows: 100px 1fr 60px;
+        height: 100vh;
       }
     </style>
+  </head>
     <body>
       <div class="container">
-        <div class="box box1">box1<br>box1<br>box1<br>box1<br>box1</div>
-        <div class="box box2">box2</div>
-        <div class="box box3">box3</div>
-        <div class="box box4">box4</div>
-        <div class="box box5">box5</div>
+        <div class="box box1">header</div>
+        <div class="box box3">main</div>
+        <div class="box box2">sidebar</div>
+        <div class="box box4">footer</div>
       </div>
     </body>
-  </head>
 </html>
