@@ -6,15 +6,29 @@
     <title>CSSの単位</title>
 
     <style>
+      html {
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
       .box {
         background-color: #333;
-        width: 1000px; /*Webではセンチ、インチ、ポイント、パイカなどは使わない。ピクセルという単位がWebではよく使われる。*/
+        width: 50%; /*Webではセンチ、インチ、ポイント、パイカなどは使わない。ピクセルという単位がWebではよく使われる。*/
         height: 100px;
-        padding: 10px;
+      }
+      .container {
+        width: 200px;
+        border: 1px solid #333;
       }
     </style>
   </head>
   <body>
-    <div class="box">box</div>
+    <div class="container">
+      <div class="box">box</div>
+    </div>
+
+    <h1>見出し</h1>
+    <p>本文です</p>
   </body>
 </html>
