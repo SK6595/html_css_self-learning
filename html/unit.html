@@ -7,11 +7,14 @@
 
     <style>
       html {
-        font-size: 12px;
+        font-size: 16px;
+      }
+      article {
+        font-size: 3em;
       }
       h1 {
-        font-size: 1.5em;
-      }
+        font-size: 1.5rem; /*emというのは、前の要素にさらに前の要素の大きさも全部関連してくる。 */ /*「rem」は「ルート要素のフォントサイズを基準とするもの」になる。*/
+      } /*基本的には変な影響が与えられないように、remを使っていただくとあまり影響がなくて良い。 */
       .box {
         background-color: #333;
         width: 50%; /*Webではセンチ、インチ、ポイント、パイカなどは使わない。ピクセルという単位がWebではよく使われる。*/
@@ -27,8 +30,9 @@
     <div class="container">
       <div class="box">box</div>
     </div>
-
-    <h1>見出し</h1>
-    <p>本文です</p>
+    <article>
+      <h1>見出し</h1>
+      <p>本文です</p>
+    </article>
   </body>
 </html>
