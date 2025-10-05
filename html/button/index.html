@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!-- リセットCSSにはress.cssを使用している。 -->
     <title>ボタン</title>
 
     <style>
       .btn {
-        background: linear-gradient(
-          45deg,
-          #6a11cb,
-          #2575fc
+        background: linear-gradient( /*グラデーションをかける時は、backgroundプロパティを使用する。linearは「直線的な」という意味で、gradientはグラデーションという意味。*/
+          45deg, /*先頭が方向や角度を表し、45度の場合は斜め上にグラデーションされる。*/
+          #6a11cb, /*最初の色が左下から始まる。*/
+          #2575fc /*2番目の色が右上の色になる。*/
+          /*終点と始点の色を指定してあげるだけで、残りのふわっとした部分はWebブラウザが自動的に計算してグラデーションを作ってくれる。*/
         );
         padding: 15px 30px;
         color: #fff;
