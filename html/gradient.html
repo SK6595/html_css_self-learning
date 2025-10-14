@@ -14,11 +14,14 @@
         width: 400px;
         height: 200px;
         border: 1px solid #666;
-        background: linear-gradient(
-          to bottom right, /*下と右に向かってグラデーションするので、左上から右下に向かってグラデーションする。*/
-          #6a11cb,
-          #2575fc
+        /*background: linear-gradient(
+          to top left,
+          #6a11cb 20%,
+          #2575fc 50%,
+          #fff 80%
         );
+        */
+        background: repeating-linear-gradient(45deg, #6a11cb, #2575fc 20%); /*repeatingなので、もう一度戻って、もう一度グラデーションして、また戻って、またグラデーションしてということを繰り返していく。*/
       }
     </style>
   </head>
