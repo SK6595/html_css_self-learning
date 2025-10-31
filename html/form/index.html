@@ -12,10 +12,10 @@
       <h1>入会フォーム</h1>
       <form action="" method="post">
         <div class="form-group">
-          <label for="myname">お名前</label>
-          <input type="text" id="myname" name="myname" placeholder="例：山田太郎">
+          <label for="myname">お名前<span class="required">必須</span></label>
+          <input type="text" id="myname" name="myname" placeholder="例：山田太郎" required> <!-- 「required」は「必要とする」という意味になる。 -->
         </div>
-        
+
         <button type="submit">送信</button> <!-- buttonタグは通常type属性は「button」というtype属性が標準となるが、フォームを送信する時には必ず「submit」というのにする必要がある。 -->
       </form>
     </div>
