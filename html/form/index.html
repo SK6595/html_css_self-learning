@@ -19,6 +19,15 @@
           <label for="email">メールアドレス<span class="required">必須</span></label>
           <input type="email" id="email" name="email" placeholder="例:example@example.com" required>
         </div>
+        <div class="form-group">
+          <label>性別</label> <!-- 性別に対しては複数の項目があるため、for属性がない -->
+          <div class="radio-group">
+            <label> <!-- labelタグの中に複数の項目を入れると、中に入っているもの自身がラベルになる -->
+              <input type="radio" name="gender" value="male">
+              <span>男性</span>
+            </label>
+          </div>
+        </div>
 
         <button type="submit">送信</button> <!-- buttonタグは通常type属性は「button」というtype属性が標準となるが、フォームを送信する時には必ず「submit」というのにする必要がある。 -->
       </form>
