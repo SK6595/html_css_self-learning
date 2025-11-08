@@ -23,8 +23,16 @@
           <label>性別</label> <!-- 性別に対しては複数の項目があるため、for属性がない -->
           <div class="radio-group">
             <label> <!-- labelタグの中に複数の項目を入れると、中に入っているもの自身がラベルになる -->
-              <input type="radio" name="gender" value="male">
+              <input type="radio" name="gender" value="male"> <!-- 選択肢を作る際は、name属性を全て同じにしてあげること。 --> <!-- データの送信時は、value属性の中身が送られる。 -->
               <span>男性</span>
+            </label>
+            <label>
+              <input type="radio" name="gender" value="female">
+              <span>女性</span>
+            </label>
+            <label>
+              <input type="radio" name="gender" value=""> <!-- valueの箇所は、「空欄」にすることができる。 -->
+              <span>その他・回答しない</span>
             </label>
           </div>
         </div>

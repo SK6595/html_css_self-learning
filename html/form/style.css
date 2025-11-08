@@ -67,3 +67,18 @@ button:hover {
   margin-left: 4px;
   color: #fff;
 }
+
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: .5rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  font-weight: normal; /*ラジオボタンのラベルは太文字にする必要がない。*/
+  margin: 0;
+  gap: .5rem; /*ここでのgapは、ラジオボタンとラベルの隙間になる。
+}
+  
