@@ -79,6 +79,12 @@ button:hover {
   align-items: center;
   font-weight: normal; /*ラジオボタンのラベルは太文字にする必要がない。*/
   margin: 0;
-  gap: .5rem; /*ここでのgapは、ラジオボタンとラベルの隙間になる。
+  gap: .5rem; /*ここでのgapは、ラジオボタンとラベルの隙間になる。*/
 }
-  
+
+@media (max-width: 680px) {
+  .radio-group {
+    flex-direction: column;
+    gap: .5rem;
+  }
+}
