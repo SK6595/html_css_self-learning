@@ -55,6 +55,16 @@
           </div>
         </div>
 
+        <div class="form-group">
+          <label for="membership">会員種別<span class="required">必須</span></label>
+          <select id="membership" name="membership" required> <!-- selectタグはドロップダウンリストを作るためのタグとなる。--> <!-- name属性の中身がフォームが送信される時の値となる。-->
+            <option value="">選択してください</option> <!-- 通常はドロップダウンリストに関しては、「一番上にダミーの項目を加えておく」ことが一般的である。 -->
+            <option value="regular">一般会員</option> <!-- 送信される時はvalue属性の内容が送信されるので、「一般会員」などの表示されている内容ではない。 -->
+            <option value="student">学生会員</option>
+            <option value="senior">シニア会員</option>
+          </select>
+        </div>
+
         <button type="submit">送信</button> <!-- buttonタグは通常type属性は「button」というtype属性が標準となるが、フォームを送信する時には必ず「submit」というのにする必要がある。 -->
       </form>
     </div>
