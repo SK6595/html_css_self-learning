@@ -31,7 +31,7 @@
               <span>女性</span>
             </label>
             <label>
-              <input type="radio" name="gender" value=""> <!-- valueの箇所は、「空欄」にすることができる。 -->
+              <input type="radio" name="gender" value="" checked> <!-- valueの箇所は、「空欄」にすることができる。 --> <!-- checkedを書いた箇所は最初からチェックされた状態になる。-->
               <span>その他・回答しない</span>
             </label>
           </div>
@@ -41,7 +41,7 @@
           <label>興味のある分野</label>
           <div class="checkbox-group">
             <label>
-              <input type="checkbox" name="interest[]" value="スポーツ">
+              <input type="checkbox" name="interest[]" value="スポーツ"> <!-- PHPでチェックボックスを受け入れる時に大括弧という記号が必要になる。 -->
               <span>スポーツ</span>
             </label>
             <label>
