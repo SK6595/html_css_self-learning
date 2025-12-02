@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
     <title>Document</title>
     <style>
-      #title1 {
+      h2 ~ p { /* h2の後に後続してpタグがある場合のpタグが適用となる。*/
         color: red;
       }
     </style>
   </head>
   <body>
-    <h1 id="title1">Title</h1> <!-- title1というidが付いたものにだけスタイルを当てることができる。 --> <!-- id属性はJavaScriptで多用される -->
-    <h1>title2</h1>
+    <!-- <h1 id="title1">Title</h1> --> <!-- title1というidが付いたものにだけスタイルを当てることができる。 --> <!-- id属性はJavaScriptで多用される -->
+    <!-- <h1>title2</h1> -->
+    <p>前にある段落</p>
+    <h2>Title</h2>
+    <p>本文</p>
+    <p>二行目</p>
   </body>
 </html>
