@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
     <title>Document</title>
     <style>
-      button[class~="button"] { /*チルダは値を含むかどうかを意味する。
-        background-color: red;
+      li:nth-child(odd) {
+        color: red;
       }
     </style>
   </head>
   <body>
-    <!-- <h1 id="title1">Title</h1> --> <!-- title1というidが付いたものにだけスタイルを当てることができる。 --> <!-- id属性はJavaScriptで多用される -->
-    <!-- <h1>title2</h1> -->
-    <button class="button">ボタン</button>
+    <ul>
+      <li>リスト1</li>
+      <li>リスト2</li>
+      <li>リスト3</li>
+    </ul>
   </body>
 </html>
