@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>CSSの詳細度</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      div[class="box box-primary"] {
+        background-color: #0ff;
+      }
+      .box.box-primary {
+        background-color: #00f;
+      }
+      div {
+        background-color: #0f0;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="box1" class="box box-primary"></div>
+  </body>
+</html>
