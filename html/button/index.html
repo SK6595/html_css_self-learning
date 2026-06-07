@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!-- リセットCSSにはress.cssを使用している。 -->
+    <title>ボタン</title>
+
+    <style>
+      body {
+        padding: 20px;
+      }
+      .btn {
+        background: linear-gradient( /*グラデーションをかける時は、backgroundプロパティを使用する。linearは「直線的な」という意味で、gradientはグラデーションという意味。*/
+          45deg, /*先頭が方向や角度を表し、45度の場合は斜め上にグラデーションされる。*/
+          #6a11cb, /*最初の色が左下から始まる。*/
+          #2575fc /*2番目の色が右上の色になる。*/
+          /*終点と始点の色を指定してあげるだけで、残りのふわっとした部分はWebブラウザが自動的に計算してグラデーションを作ってくれる。*/
+        );
+        padding: 15px 30px;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 8px; /*border-radiusは「外側の線の部分を丸くする」という意味。*/
+        box-shadow: 0 4px 10px rgba(0, 0, 0, .25); /*box-shadowは4つのパラメータを指定する。*/
+        transition: transform 1s; /*何のプロパティの変化をアニメーションさせるかというのを設定する。*/
+      }
+      .btn:hover {
+        transform: scale(1.05);
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">ログインする</button>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+/* CSSをリセットする */
+@import url('normalize.css'); /*normalize.cssに関してはHTMLから読むのではなく、CSSから参照してあげれば直接読み込めるようになる。*/
+/*「@import」という書き方は、CSSのファイルの中から別のCSSファイルを参照するというやり方ができる。*/
+
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+}
+h2 {
+  margin-top: 50px;
+}
+p {
+  color: dimgray;
+}
+body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: white; /* whiteなどは「カラーネーム」と呼ばれる。whiteは、カラーコードの「#fff」に書き換えることができる。*/
+    /*padding: 100px 300px;*/ /*paddingは「内側の余白」を意味する。*/ /*marginは「外側の余白」を意味する。*/
+}
+header,
+main,
+footer {
+  padding: 20px 30px;
+}
+.card { /*class属性を使ってクラスを分けるというセレクターのことを「クラスセレクター」と言う。タグ名は省略することでHTMLが後から変更しやすくなる。*/
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 10px; /*個別のプロパティで10px空けている。*/
+  border-radius: 10px; /*border-radiusは枠線の丸みを設定するためのものになる。*/
+}
+.center {
+  text-align: center;
+}
+.text-small {
+  font-size: .8em; /*1emが標準の大きさなので、「.8」は80%のことになる。0は省略できる。*/
+}
+.card h3 { /*「card」というclass属性が当たっている要素の中に入っている「h3」という意味。これは「子孫セレクタ」になる。*/ /*要素セレクタよりも子孫セレクタの方が詳細度が高いため、CSSの優先順位が上がる。*/
+  font-size: 2em;
+}
+h3 {
+  font-size: 5em; /*要素セレクタで書いているものは、どこで書いても詳細度が低いので、子孫セレクタには勝てない*/
+}

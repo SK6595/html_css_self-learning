@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Grid</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ビューポートの設定。昔のWebサイトの作り方の名残となる。 -->
+        <!-- レスポンシブWebデザインをする時には、ビューポートの設定を書いておく必要がある。 -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>MyTube</h1>
+        </header>
+
+        <div class="container"> <!-- containerというクラスは全体を囲う時によく使われるクラス名になる。 -->
+            <aside> <!-- サイドエリアの箇所にナビゲーション以外のお知らせ的なものを入れたくなるかもしれないので、今回はasideタグを使う -->
+                <nav>
+                    <ul>
+                        <li><a href="#">ホーム</a></li>
+                        <li><a href="#">急上昇</a></li>
+                        <li><a href="#">登録チャンネル</a></li>
+                        <li><a href="#">お気に入り</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+                <div class="video"> <!-- 全体を囲うタグになり、この中にサムネイル、タイトル、説明が入るようにする。 -->
+                    <div class="video-thumbnail"></div> <!-- サムネイルは今回は特に画像は準備しないので、代わりにdivタグを使っていく。実際に画像がある場合はimgタグを入れても良い。 -->
+                    <div class="video-info"></div> <!-- 「video-info」として全体を囲う。 -->
+                        <h3>タイトル</h3>
+                        <p>概要</p>
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail"></div>
+                    <div class="video-info"></div>
+                        <h3>タイトル</h3>
+                        <p>概要</p>
+                </div>
+                <div class="video">
+                    <div class="video-thumbnail"></div>
+                    <div class="video-info"></div>
+                        <h3>タイトル</h3>
+                        <p>概要</p>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

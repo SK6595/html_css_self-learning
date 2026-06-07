@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>CSSの単位</title>
+
+    <style>
+      html {
+        font-size: 12px;
+      }
+      article {
+        font-size: 1em;
+        direction: ltr; /*日本人の場合は左から始まって右に向かっていく*/
+        writing-mode: sideways-lr;
+      }
+      h1 {
+        font-size: 1.5rem; /*emというのは、前の要素にさらに前の要素の大きさも全部関連してくる。 */ /*「rem」は「ルート要素のフォントサイズを基準とするもの」になる。*/
+        /*基本的には変な影響が与えられないように、remを使っていただくとあまり影響がなくて良い。 */
+        border-block-start: 5px solid #333; /*「border-inline-start」は、文章の始まりを基準として引いてくださいねということ。*/
+        padding-block-start: 10px;
+      }
+      .box {
+        background-color: #333;
+        /*width: 50%;*/ /*Webではセンチ、インチ、ポイント、パイカなどは使わない。ピクセルという単位がWebではよく使われる。*/
+        /*height: 100px;*/
+      }
+      .container {
+      }
+    </style>
+  </head>
+  <body>
+    <!--<div class="container">-->
+    <!--  <div class="box">box</div>-->
+    <!--</div>-->
+    <article>
+      <h1>見出し</h1>
+      <p>本文です</p>
+    </article>
+  </body>
+</html>

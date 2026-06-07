@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <title>グラデーション</title>
+
+    <style>
+      body {
+        padding: 20px;
+      }
+      .box {
+        width: 400px;
+        height: 200px;
+        border: 1px solid #666;
+        /*background: linear-gradient(
+          to top left,
+          #6a11cb 20%,
+          #2575fc 50%,
+          #fff 80%
+        );
+        */
+        /*background: repeating-linear-gradient(
+          45deg, #6a11cb, #2575fc 20%
+        ); *//*repeatingなので、もう一度戻って、もう一度グラデーションして、また戻って、またグラデーションしてということを繰り返していく。*/
+        background: conic-gradient(
+          #6a11cb, #2575fc
+        ); /*扇状にグラデーションする。*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

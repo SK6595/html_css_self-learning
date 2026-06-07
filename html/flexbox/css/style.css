@@ -1,0 +1,24 @@
+@import url('destyle.css');
+
+.menu {
+  display: flex;
+  gap: 10px; /*gapは、flexboxにすることで使用できるプロパティになる。*/
+}
+
+nav { /*navがたくさんある場合は、classで分けると良いが、通常1つの画面にnavは1つなので、要素セレクタにする */
+ display: flex; /*displayプロパティが元々blockになっているので横並びに指定する*/
+ align-items: center;
+ justify-content: space-between; /*「betweenのところにスペースを入れるよ」ということなので、要素同士の間のところに空白が入って、両橋に寄せるような形になる*/
+ padding: 10px;
+}
+
+nav h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+a:not(.logo):hover { /*このセレクタを「擬似要素」と言い、コロンを付けることで、「この要素が⚪︎⚪︎した時」という条件を付け足すことができる。*/
+    /*この擬似要素の条件は、「logoというクラスが割り当たっていない場合、で、マウスカーソルが重なった場合」という条件になる。*/
+    color: #646cff;
+    text-decoration: underline;
+}
