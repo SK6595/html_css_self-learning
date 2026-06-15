@@ -8,16 +8,13 @@
     <meta charset="UTF-8">
     <title>よくあるご質問</title>
     
-    <style>
-      h1 {
-          text-align: center;
-          font-size: 1.5em;
-      }
-      /* 内部参照を書くと、1箇所を変更するだけでその文章の中の全部のスタイルが調整される。 */
-      p {
-        color: dimgray;
-      }
-    </style>
+    <!-- rel属性は「Relationship」の略だが、あまりここは意識しなくても良い。 -->
+    <!-- CSSを使う時には、rel属性というのを必ず「stylesheet」にする。 -->
+    <!-- linkタグは他の用途にも使われたりするので、ここでは「CSSで使いますよ」という意味で、rel属性を「stylesheet」にしている。 -->
+    <!-- href属性は、「hypertext reference」の略で、あまりこれも意識しなくても良い。 -->
+    <!-- href属性は、「ファイル名（具体的にはファイルパス、そのファイルの場所）」を示してあげる。 -->
+    <!-- こうすると、「CSSのファイルとHTMLのファイルが合体」して、これで参照して使えるようになる。 -->
+    <link rel="stylesheet" href="css/style2.css">
   </head>
   <body>
     <h1>よくあるご質問</h1>
