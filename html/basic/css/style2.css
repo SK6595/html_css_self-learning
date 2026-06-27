@@ -1,9 +1,12 @@
-/* HTMLのコメントとCSSのコメントはそれぞれ記号が異なる 
+/* HTMLのコメントとCSSのコメントはそれぞれ記号が異なる */
 /* ノーマライズCSSを書き忘れてしまったりなどの事故が起こる可能性を防ぐために書く。 */
 /* @importという書き方で、「CSSのファイルの中から別のCSSを参照する」というやり方ができる。 */
 /* style.css自身から見た時のnormalize.cssの場所は、自分と同じ場所になるので、フォルダ名は不要になる。 */
-@import url('normalize2.css'); 
+@import url('normalize2.css');
 
+body {
+  background-color: #eee; /*カラーコードは3桁〜8桁*/
+}
 h1 {
   text-align: center;
   font-size: 1.5em;
@@ -13,7 +16,7 @@ p {
   color: dimgray;
 }
 header {
-  background-color: red;
+  background-color: white; /*whiteはカラーネーム*/
 }
 
 body {
