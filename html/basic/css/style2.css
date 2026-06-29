@@ -16,11 +16,15 @@ p {
   color: dimgray;
 }
 header {
-  background-color: white; /*whiteはカラーネーム*/
-  padding: 20px; /* 内側の余白 */
-  margin: 20px; /* 外側の余白 */
+  background-color: #fff; /*whiteはカラーネーム*/
+  padding: 20px 30px; /* 上下左右 */
+  /*
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  */
 }
-
 body {
   margin: 0;
   padding: 0;
