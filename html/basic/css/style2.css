@@ -15,9 +15,10 @@ h1 {
 p {
   color: dimgray;
 }
+
 header {
   background-color: #fff; /*whiteはカラーネーム*/
-  padding: 20px 30px; /* 上下左右 */
+  padding: 100px 300px; /* 上下左右 */
   /*
   padding-top: 20px;
   padding-right: 20px;
@@ -26,6 +27,6 @@ header {
   */
 }
 
-main {
+header, main, footer {
   padding: 20px 30px;
 }
