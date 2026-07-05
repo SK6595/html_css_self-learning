@@ -24,7 +24,7 @@ header, main, footer {
   padding: 20px 30px;
 }
 
-div {
+.card { /* タグ名は省略できる */
   background-color: #fff;
   padding: 10px 20px;
   margin-bottom: 10px; /* ショートハンドプロパティではなく、個別のプロパティ */
