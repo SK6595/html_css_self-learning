@@ -38,3 +38,7 @@ header, main, footer {
 .text-small {
   font-size: .8em;
 }
+
+.card h3 { /*子孫セレクタ*/
+  font-size: 1.2em;
+}
