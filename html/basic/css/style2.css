@@ -39,6 +39,10 @@ header, main, footer {
   font-size: .8em;
 }
 
-.card h3 { /*子孫セレクタ*/
+.card h3 { /* 子孫セレクタ */ /* CSSは詳細度が高いほど優先度が上がる */
   font-size: 1.2em;
+}
+
+h3 {
+  font-size: 5em;
 }
