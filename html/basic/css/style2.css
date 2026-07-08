@@ -11,6 +11,9 @@ h1 {
   text-align: center;
   font-size: 1.5em;
 }
+h2 {
+  margin-top: 50px;
+}
 /* 内部参照を書くと、1箇所を変更するだけでその文章の中の全部のスタイルが調整される。 */
 p {
   color: dimgray;
