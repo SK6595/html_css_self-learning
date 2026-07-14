@@ -1,0 +1,4 @@
+li {
+  display: inline; /*inlineにすると、要素がその要素の幅までしか確保されなくなる。*/
+  border: 1px solid #ccc; 
+}
